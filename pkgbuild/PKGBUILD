@@ -1,0 +1,16 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=xcursor-red-modern
+pkgver=1.0
+pkgrel=1
+pkgdesc="RED Modern cursor theme"
+arch=('any')
+url='https://github.com/blackbird-os/xcursor-red-modern'
+license=('GPL')
+depends=('sddm')
+
+package() {
+  cd ../..
+  cp -aR usr $pkgdir/
+}
